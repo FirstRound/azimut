@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Raleway', sans-serif;
+
+$mon: 'Montserrat';
+$rel: 'Raleway';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: 700;
+	color: #d83558;
+	margin: 0 0 50px;
+	text-transform: uppercase;
+}

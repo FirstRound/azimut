@@ -1,0 +1,290 @@
+.block-1 {
+  padding-top: 85px;
+  height: 950px;
+  background: url(../img/block-1.jpg) no-repeat center center /cover;
+
+  &__title {
+    font-size: 48px;
+    line-height: 1.1;
+    color: #fff;
+    margin: 210px 0 20px;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 70px;
+  }
+
+  .btn-danger {
+    margin-left: 100px;
+  }
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 95px;
+
+  &-icon {
+    margin-right: 5px;
+  }
+
+  &-number {
+    span {
+      display: block;
+      color: #fff;
+
+      &:nth-child(1) {
+        font-size: 16px;
+      }
+
+      &:nth-child(2) {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.double-nav {
+  background: #fff;
+  box-shadow: 6px 6px 27px 0px #f3f4f9;
+}
+
+.about {
+  padding: 70px 0;
+
+  &__subtitle {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+  }
+}
+
+.direction {
+  padding-bottom: 20px;
+
+  .title {
+    margin-bottom: 35px;
+  }
+  
+  &-row {
+    display: flex;
+  }
+
+  &-item {
+    width: 16.666%;
+    margin-bottom: 30px;
+
+    &__icon {
+      width: 100%;
+      height: 76px;
+      line-height: 76px;
+      background: #fff;
+      text-align: center;
+    }
+
+    &__description {
+      font-size: 12px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  .btn-wrap {
+    text-align: right;
+  }
+}
+
+.loyalty {
+
+  &-content {
+    background: #d83558;
+    padding-top: 35px;
+    margin-bottom: 70px;
+  }
+
+  &-item {
+    margin-bottom: 50px;
+
+    &__title {
+      font-size: 18px;
+      color: #fff;
+      margin: 0 0 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &__description {
+      font-size: 16px;
+      color: #aaa;
+    }
+  }
+
+  .nav-tabs {
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+
+    li {
+      flex: 1 auto;
+      margin: 0;
+      padding-bottom: 5px;
+      position: relative;
+
+      a {
+        display: block;
+        text-align: left;
+        padding: 0;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+        line-height: 1.2;
+        background: #fff;
+        color: #000;
+        font-weight: 700;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 14px;
+        border: none;
+
+        &:hover {
+          color: #d83558;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          border: none;
+          margin: 0;
+          background: #fff;
+        }
+      }
+
+      &.active {
+        a {
+          border: none;
+          border-radius: 0;
+          background: #fff;
+          color: #d83558;
+        }
+
+        &:before {
+          content: '';
+          width: 70px;
+          height: 5px;
+          background: #d83558;
+          position: absolute;
+          left: 0px;
+          bottom: -5px;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    padding-top: 60px;
+  }
+
+  .tab-item {
+    margin-bottom: 40px;
+  }
+
+  .tab-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .tab-icon {
+      width: 28px;
+      height: 28px;
+      background-size: contain;
+      background-position: center center;
+      margin: 0 15px;
+      background-repeat: no-repeat;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  .tab-subtitle {
+    font-size: 14px;
+    color: #aaa;
+    margin: 0;
+  }
+}
+
+.industry {
+
+  &-content {
+    background: #e8e8e8;
+    padding-top: 20px;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    width: 33.3333%;
+    margin-bottom: 35px;
+
+    &__wrap {
+      max-width: 250px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    &__icon {
+      height: 88px;
+      line-height: 88px;
+    }
+
+    &__title {
+      font-size: 18px;
+      margin: 0;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 22px;
+      height: 44px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      color: #aaa;
+      margin: 0;
+    }
+
+    &:nth-child(2) {
+      text-align: center;
+    }
+
+    &:nth-child(3) {
+      text-align: right;
+    }
+
+    &:nth-child(4) {
+      text-align: center;
+    }
+
+    &:nth-child(5) {
+      text-align: center;
+    }
+  }
+}
