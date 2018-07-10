@@ -27,10 +27,10 @@ import sourcemaps from 'gulp-sourcemaps';
 gulp.task('sass', function() {
 	return gulp.src('scss/*.scss')
 	.pipe(sourcemaps.init())
-	.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+	.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-	//.pipe(sourcemaps.write('build/maps'))
-	//.pipe(rename({suffix: '.min'}))
+	.pipe(sourcemaps.write('build/maps'))
+	.pipe(rename({suffix: '.min'}))
 	.pipe(connect.reload())
 	.pipe(notify({
 		message: 'sass!'

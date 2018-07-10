@@ -55,11 +55,19 @@ div[class*="col"] {
   box-shadow: 6px 6px 27px 0px rgba(0, 0, 0, 0.29);
   transition: 0.3s ease;
 
-  &:hover,
+  &:hover {
+    background-color: #000;
+  }
+
   &:focus,
   &:active {
-    background-color: #000;
+    background-color: #d83558;
     outline: none !important;
     background-image: url(../img/btn-phone.png);
+  }
+
+  @media (max-width: 479px) {
+    font-size: 14px;
+    padding: 12px 50px 13px 40px;
   }
 }
