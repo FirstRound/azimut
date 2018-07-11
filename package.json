@@ -34,5 +34,9 @@
   },
   "dependencies": {
     "imagemin-pngquant": "^4.0.0"
+  },
+  "scripts": {
+    "start": "node app",
+    "postinstall": "gulp default"
+    }
   }
-}
